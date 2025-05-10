@@ -1,8 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { div } from 'framer-motion/client';
+import Header from './header';
 
 const AboutSection = () => {
-  return (
+  return <div>
+     <Header />
     <section className="flex flex-col-reverse lg:flex-row items-center justify-between px-6 md:px-20 py-16 bg-white">
       {/* Left Side: Images & Cards */}
       <div className="relative grid grid-cols-2 gap-4 max-w-lg">
@@ -119,7 +122,7 @@ const AboutSection = () => {
         </motion.button>
       </motion.div>
     </section>
-  );
+    </div>
 };
 
 export default AboutSection;
